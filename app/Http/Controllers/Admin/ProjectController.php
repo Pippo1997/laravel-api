@@ -60,7 +60,7 @@ class ProjectController extends Controller
         $newProject = new Project();
 
         if($request->has('cover_image')){
-            $path = Storage::disk('public')->put('test.jpeg',$request->cover_image);
+            $path = Storage::disk('public')->put('project_images',$request->cover_image);
             $form_data['cover_image'] = $path;
         }
 
