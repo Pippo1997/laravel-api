@@ -16,4 +16,22 @@ class ProjectController extends Controller
             'results' => $projects
         ]);
     }
+
+    public function show($slug){
+        $project = Project::with('category', 'tags')->where('slug', $slug)->first();
+
+        if($project){
+            return response()->json([
+                'success' => true,
+                'results' => $project
+            ]);
+        }
+        else{
+            return response()->json([
+                'success' => false,
+                'error' => 'Nessun Project tovato'
+            ]);
+        }
+    }
+
 }
