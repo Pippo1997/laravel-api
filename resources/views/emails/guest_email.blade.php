@@ -1,4 +1,4 @@
-<h1>Nuovo conatto da Boolpress</h1>
+<h1>Nuovo contatto da Boolpress</h1>
 <p>
     Nuovo Contatto inserito <br>
     Nome: {{ $lead->name }}

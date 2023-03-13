@@ -2,8 +2,9 @@
 
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
-use App\Http\Controllers\Api\ProjectController as ProjectController;
-use App\Http\Controllers\GuestLeadController as GuestLeadController;
+use App\Http\Controllers\Api\ProjectController;
+use App\Http\Controllers\Api\GuestLeadController;
+
 
 /*
 |--------------------------------------------------------------------------
